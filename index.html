@@ -6,8 +6,7 @@ THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.
  
  
 Authors in chronological order of contribution:
-Tim Riedel
-Author 2
+Laura Lopez
  
 Further Information:
 http://cns.utexas.edu/fri
@@ -17,7 +16,7 @@ Timothy Riedel
 triedel@utexas.edu
  
 Brief Description of Goal of Code:
-blah, blah, blah,
+The goal of the code is to create a blank canvas that with the use of buttons will draw a rectangle, add my name to the code, add a picture, and then reset(clear the canvas.
  
 Known Issues:
 blah, blah, blah, blah
@@ -74,13 +73,17 @@ console.log("This file last modified " + docMod); // generates message in javaSc
  	
 	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
 
-	
+
+<script>
 	function draw_b() {
 	var b_canvas = document.getElementById("b");
 	var b_context = b_canvas.getContext("2d");
 	b_context.fillRect(50, 25, 150, 100);
 	}
+	draw_b();
+</script>
 
+	
 <footer class="w3-bottom w3-container w3-flat-carrot">
 	<p>DIY!</p>
 </footer>
