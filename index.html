@@ -103,6 +103,12 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 		var b_context = b_canvas.getContext("2d");
 		b_context.clearRect(0,0,500, 200)
 	}
+	function drawName() {
+		var b_canvas = document.getElementById("myCanvas");
+		var b_context = b_canvas.getContext("2d");
+		b_context.font = "12px sans-serif";
+		b_context.fillText("Laura Lopez", 50,50);
+	}
 </script>
 
 	
