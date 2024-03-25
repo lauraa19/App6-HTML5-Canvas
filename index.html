@@ -113,9 +113,9 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 		var b_canvas = document.getElementById("myCanvas");
 		var b_context = b_canvas.getContext("2d");
 		var image = new Image();
-		cat.src = "images/IMG_9211.HEIC";
-		cat.onload = function() {
-			context.drawImage(cat, 0, 0);
+		image.src = "images/IMG_9211.HEIC";
+		image.onload = function() {
+			context.drawImage(image, 0, 0);
 		}
 	}
 </script>
