@@ -19,7 +19,8 @@ Brief Description of Goal of Code:
 The goal of the code is to create a blank canvas that with the use of buttons will draw a rectangle, add my name to the code, add a picture, and then reset(clear the canvas.
  
 Known Issues:
-blah, blah, blah, blah
+Getting buttons to show.
+	
 https://www.w3schools.com/w3css/default.asp
 https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-file
 -->
@@ -89,7 +90,12 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 		var b_canvas = document.getElementById("myCanvas");
 		var b_context = b_canvas.getContext("2d");
 		b_context.fillStyle = "#D1A8EB";
-		b_context.fillRect(50, 25, 150, 100);
+		b_context.fillRectangle(50, 25, 150, 100);
+	}
+	function clear() {
+		var b_canvas = document.getElementById("myCanvas");
+		var b_context = b_canvas.getContext("2d");
+		b_context.clearRectangle(0,0,500, 200)
 	}
 </script>
 
