@@ -113,10 +113,8 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 		var b_canvas = document.getElementById("myCanvas");
 		var b_context = b_canvas.getContext("2d");
 		var image = new Image();
-		image.onload = function() {
-			b_context.drawImage(image, 0, 0);
-		}
 		image.src = "annie-spratt-Xw87O6oMCmo-unsplash.jpg";
+		b_context.drawImage(image, 5, 20, 200, 75);
 	}
 </script>
 
