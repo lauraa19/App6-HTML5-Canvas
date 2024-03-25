@@ -109,6 +109,15 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 		b_context.font = "12px sans-serif";
 		b_context.fillText("Laura Lopez", 200,200);
 	}
+	function drawImage() {
+		var b_canvas = document.getElementById("myCanvas");
+		var b_context = b_canvas.getContext("2d");
+		var image = new Image();
+		cat.src = "images/IMG_9211.HEIC";
+		cat.onload = function() {
+			context.drawImage(cat, 0, 0);
+		}
+	}
 </script>
 
 	
