@@ -114,7 +114,7 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 		var b_context = b_canvas.getContext("2d");
 		var image = new Image();
 		image.onload = function() {
-			context.drawImage(image, 0, 0);
+			b_context.drawImage(image, 0, 0);
 		}
 		image.src = "IMG_9211.jpeg";
 	}
