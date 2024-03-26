@@ -93,38 +93,40 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 		<button onclick="clearCanvas()" >Clear Canvas</button>
 	</div>
 
-<script>
-	function draw_b() {
-		var b_canvas = document.getElementById("myCanvas");
-		var b_context = b_canvas.getContext("2d");
-		b_context.fillStyle = "#D1A8EB";
-		b_context.fillRect(85, 25, 55, 35);
+<script> //Used to define the Javascript functions that will be referenced back to by the canvas to execute the drawing operations.
+	function draw_b() { //Created a function to draw the rectangle.
+		var b_canvas = document.getElementById("myCanvas"); //This variable referecnes the canvas element.
+		var b_context = b_canvas.getContext("2d"); //This element allows for 2d context use.
+		b_context.fillStyle = "#D1A8EB"; //This element picks the filling color of the rectangle.
+		b_context.fillRect(85, 25, 55, 35); //This element picks the coordinates and size of the rectangle.
 	}
-	function clearCanvas() {
-		var b_canvas = document.getElementById("myCanvas");
-		var b_context = b_canvas.getContext("2d");
-		b_context.clearRect(0,0,500, 200)
+	function clearCanvas() { //Created a function to clear the canvas.
+		var b_canvas = document.getElementById("myCanvas"); //This variable referecnes the canvas element.
+		var b_context = b_canvas.getContext("2d"); //This element allows for 2d context use.
+		b_context.clearRect(0,0,500, 200) //This element picks the coordinates and size of the clearing.
 	}
-	function drawName() {
-		var b_canvas = document.getElementById("myCanvas");
-		var b_context = b_canvas.getContext("2d");
-		b_context.font = "12px sans-serif";
-		b_context.fillText("Laura Lopez", 0,90);
+	function drawName() { //Created a function to draw my name on the Canvas.
+		var b_canvas = document.getElementById("myCanvas"); //This variable referecnes the canvas element.
+		var b_context = b_canvas.getContext("2d"); //This element allows for 2d context use.
+		b_context.font = "12px sans-serif"; //This element allows to shose the size and font of the text. 
+		b_context.fillText("Laura Lopez", 0,90); //This element allows to place the text to be displayed and its coordinates.
 	}
-	function drawImage() {
-		var b_canvas = document.getElementById("myCanvas");
-		var b_context = b_canvas.getContext("2d");
-		var image = new Image();
-		image.onload = function() {
-			b_context.drawImage(image, 0, 0, 100, 75); //Code will determine the size of the image in the canvas.//
+	function drawImage() { //Created a function to draw the image selected on the canvas.
+		var b_canvas = document.getElementById("myCanvas"); //This variable referecnes the canvas element.
+		var b_context = b_canvas.getContext("2d"); //This element allows for 2d context use.
+		var image = new Image(); //This variable is created to store the image and what it will do once the button is pressed.
+		image.onload = function() { //This onload function created will select what the new Image variable does, to lod when the button is pressed.
+			b_context.drawImage(image, 0, 0, 100, 75); //Code will determine the size of the image in the canvas and where it will be placed on the canvas.
 		}
 		image.src = "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?q=80&w=2245&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D.jpg";
+		//This src works to find the image to be displayed.
 	}
+	
 </script>
 
 	
-<footer class="w3-bottom w3-container w3-flat-carrot">
-	<p>DIY!</p>
+<footer class="w3-bottom w3-container w3-flat-carrot"> <!-- The footer (end) of the website and its color.-->
+	<p>DIY!</p> <!-- What displays at the end of the footer.-->
 </footer>
 
 </body>
