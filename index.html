@@ -20,13 +20,15 @@ The goal of the code is to create a blank canvas that with the use of buttons wi
  
 Known Issues:
 Getting buttons to show.
+Aligning buttons.
+Getting image to show in the website.
 	
 https://www.w3schools.com/w3css/default.asp
 https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-file
 -->
 	
    <head> 
-      <title>App6---HTML5-Canvas</title>  
+      <title>App6---HTML5-Canvas</title>  <!-- Displays the title at the top of the code-->
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="apple-mobile-web-app-capable" content="yes">
       <link rel="stylesheet" href="w3.css">
@@ -63,31 +65,29 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 </style>
 
 <body>
-<div id="header" class="w3-container w3-flat-carrot">
-	<h1>App6---HTML5-Canvas</h1>
+<div id="header" class="w3-container w3-flat-carrot"> <!-- Code and division for the header.-->
+	<h1>App6---HTML5-Canvas</h1> <!--Text that will be displayed in the header.-->
 </div>
 	
-<div id="content" class="w3-container">
-	<p>Time to draw!</p>
+<div id="content" class="w3-container"> <!--Division to seperate the header code and the regular page code.-->
+	<p>Time to draw!</p> <!-- Text that will display in the website.-->
 		
-	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
+	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p> <!-- Text that will display in the website.-->
  	
-	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
+	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p> <!-- Text that will display in the website.-->
 	
-	<canvas id="myCanvas" width="500" height="200" style="border:1px solid #000000;">
-
-
-</canvas> 
-	<div>
+	<canvas id="myCanvas" width="500" height="200" style="border:1px solid #000000;"> <!-- Code to display the canvas with that size and border thickness and its color.-->
+	</canvas> <!-- End of canvas code.-->
+	<div> <!-- Division so that the button sill apear under the canvas instead of besides it.-->
 		<button onclick="draw_b()" >Draw a Rectangle</button>
 	</div>
-	<div>
+	<div> <!-- Division so that the button sill apear under the canvas instead of besides it.-->
 		<button onclick="drawName()" >Draw my Name</button>
 	</div>
-	<div>
+	<div> <!-- Division so that the button sill apear under the canvas instead of besides it.-->
 		<button onclick="drawImage()" >Draw an Image</button>
 	</div>
-	<div>
+	<div> <!-- Division so that the button sill apear under the canvas instead of besides it.-->
 		<button onclick="clearCanvas()" >Clear Canvas</button>
 	</div>
 
